@@ -55,7 +55,7 @@ def crearVocabulario(archCorpus, umbral):
 	
 	return vocabulario
 
-def convertirAVector(oracion,dic,lenPad):
+def convertirAVector(oracion,dic):
 	vector=[]
 	texto=noCaracteresEspeciales(oracion).split()
 	texto = ["ŧ"]+texto+["¶"]
@@ -64,7 +64,7 @@ def convertirAVector(oracion,dic,lenPad):
 			vector.append(dic.index(t))
 		except:
 			vector.append(dic.index("UNK"))
-	vector=(vector*(math.ceil(lenPad/len(vector))))[:lenPad]
+	
 	return vector
 
 

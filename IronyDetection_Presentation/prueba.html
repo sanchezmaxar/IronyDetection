@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+
+    var data = { cadena: "@ @ soy tu competencia Alicia jejeje 😈😈 " ,n:0,maxlen:100}
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "http://0.0.0.0:8090/postjson",
+        "method": "POST",
+        "headers": {
+            "Content-Type": "application/json",
+            "cache-control": "no-cache",
+            "Postman-Token": "c949041d-6ace-413e-a9ed-e554b1e713b8"
+        },
+        "processData": false,
+        "data": JSON.stringify(data)
+    }
+
+    $.ajax(settings).done(function (response) {
+        console.log(response);
+    });
+</script>
