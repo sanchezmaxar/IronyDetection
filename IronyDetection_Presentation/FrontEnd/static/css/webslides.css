@@ -1452,7 +1452,7 @@ section,
   @media (min-width: 1024px) {
     section,
     .slide {
-      padding-bottom: 12rem;
+      padding-bottom: 0rem;
       padding-top: 12rem; } }
 
 /*slide with no padding (full card, .embed youtube video...) */
@@ -1687,7 +1687,7 @@ Blocks Links li>a = .flexblock.blink (.blink required)
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0;
-    padding: 2.4rem;
+    padding: 1rem;
     position: relative; }
   .flexblock li {
     -webkit-box-flex: 1;
@@ -2910,7 +2910,7 @@ Solution: stackoverflow.com/questions/34250282/flexbox-safari-bug-flex-wrap
         width: 200%; } }
   @media (min-width: 1024px) {
     #webslides-zoomed > .wrap {
-      padding-bottom: 12rem;
+      padding-bottom: 0rem;
       padding-top: 12rem; } }
   #webslides-zoomed > .wrap > .grid > .column {
     -ms-flex-item-align: auto;

@@ -26,7 +26,7 @@ def preprocessing(corpus,getVocabulary,lenPad,vocabulario=None):
     twits=[]
     with open(corpus,"r") as f:
         docs=f.read().splitlines()
-        twits=[d.split("|",2) for d in docs]
+        twits=[d.split("|",1) for d in docs]
     cont=0
     # letras=[("á","a"),("é","e"),("í","i"),("ó","o"),("ú","u"),("ü","u")]
     cosas=[("\\n","\n"),("http://link","η"),("\\\"","\"")]

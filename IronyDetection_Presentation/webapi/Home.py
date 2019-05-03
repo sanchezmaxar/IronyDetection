@@ -10,7 +10,11 @@ cors = CORS(app, resources={r"/postjson": {"origins": "*"}})
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 #primero se debe ejecutar esta linea
+# source IronyDetection_Presentation/webapi/bin/activate
+# despues este 
 # tensorflow_model_server  --rest_api_port=8501 --model_config_file=IronyDetection_Presentation/webapi/tensorflowServerconf.conf
+# Despues se debe usar este comando en otra consola
+# python3 IronyDetection_Presentation/webapi/Home.py 
 # Comprobando el estado del api
 #  curl http://localhost:8501/v1/models/Experimento1 
 
